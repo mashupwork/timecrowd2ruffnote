@@ -23,5 +23,7 @@ group :development do
   gem 'spring'
 end
 
-gem 'omniauth-timecrowd', github: 'pandeiro245/omniauth-timecrowd', branch: 'issue-1'
+gem 'haml'
+gem 'dotenv-rails'
+gem 'omniauth-timecrowd', github: 'ruffnote/omniauth-timecrowd'
 gem 'omniauth-ruffnote', github: 'ruffnote/omniauth-ruffnote'

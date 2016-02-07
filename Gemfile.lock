@@ -1,17 +1,16 @@
 GIT
-  remote: git://github.com/pandeiro245/omniauth-timecrowd.git
-  revision: bf857b38c79a56767e52f25504f51cd1d8e41197
-  branch: issue-1
-  specs:
-    omniauth-timecrowd (0.1.0)
-      omniauth (>= 1.1.1)
-      omniauth-oauth2 (>= 1.1.1)
-
-GIT
   remote: git://github.com/ruffnote/omniauth-ruffnote.git
   revision: 5877063144fca7ba07cfbfcef1d7865193812f6a
   specs:
     omniauth-ruffnote (0.1.0)
+      omniauth (>= 1.1.1)
+      omniauth-oauth2 (>= 1.1.1)
+
+GIT
+  remote: git://github.com/ruffnote/omniauth-timecrowd.git
+  revision: 560f2b158014ebbab94636d8977ab898d2177359
+  specs:
+    omniauth-timecrowd (0.1.0)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.1.1)
 
@@ -67,12 +66,18 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.0)
     debug_inspector (0.0.2)
+    dotenv (2.1.0)
+    dotenv-rails (2.1.0)
+      dotenv (= 2.1.0)
+      railties (>= 4.0, < 5.1)
     erubis (2.7.0)
     execjs (2.6.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
     hashie (3.4.3)
     i18n (0.7.0)
     jbuilder (2.4.0)
@@ -179,6 +184,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  dotenv-rails
+  haml
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-ruffnote!

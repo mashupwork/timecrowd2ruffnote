@@ -9,6 +9,6 @@ class ProviderController < ApplicationController
       keys["#{provider}_#{key}"] = val
     end
     cookies[provider] = keys.to_json
-    redirect_to root_path, notice: 'Signed in successfully'
+    redirect_to :root, notice: 'Signed in successfully'
   end
 end
